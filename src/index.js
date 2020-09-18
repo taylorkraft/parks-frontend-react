@@ -10,6 +10,9 @@ import App from './App'
 
 const store = createStore(usStateReducer, applyMiddleware(thunk))
 
+// any component that we wrap in provider, as well as it's child components - has access to our redux store
+// any component that we wrap in router, as well as it's child components - now has access to setting up routes/links
+
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
