@@ -1,6 +1,6 @@
 import React from 'react'
 
-class usStatesContainer extends React.Component {
+class USStatesContainer extends React.Component {
   render() {
     return (
       <div>
@@ -10,4 +10,4 @@ class usStatesContainer extends React.Component {
   }
 }
 
-export default usStatesContainer
+export default USStatesContainer

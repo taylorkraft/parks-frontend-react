@@ -5,10 +5,10 @@ import { createStore, applyMiddleware } from 'redux'
 import { BrowserRouter as Router } from 'react-router-dom'
 import thunk from 'redux-thunk'
 
-import usStateReducer from './reducers/usStateReducer'
+import USStateReducer from './reducers/USStateReducer'
 import App from './App'
 
-const store = createStore(usStateReducer, applyMiddleware(thunk))
+const store = createStore(USStateReducer, applyMiddleware(thunk))
 
 // any component that we wrap in provider, as well as it's child components - has access to our redux store
 // any component that we wrap in router, as well as it's child components - now has access to setting up routes/links
